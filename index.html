@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalku</title>
+    <style>
+        body {
+            background-image: repeating-linear-gradient(to right, blue, indigo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0 0 10px gold, 0 0 10px gold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            border: 3px solid #ffffff;
+            border-radius: 50px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            width: 250px;
+        }
+
+        #display {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .button {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            box-shadow: 0 0 5px white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: black;
+        }
+
+        .equal {
+            background: gold;
+            color: black;
+        }
+
+        .clear {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+ <fieldset>
+<h1>Si Raja</h1>
+ <form name="calculator">
+ <input id="display" name="display" placeholder="0" readonly>
+     <div class="buttons">
+    <input type="button" class="button" value="7" onclick="calculator.display.value += '7'">
+  <input type="button" class="button" value="8" onclick="calculator.display.value += '8'">
+       <input type="button" class="button" value="9" onclick="calculator.display.value += '9'">
+                    <input type="button" class="button" value="+" onclick="calculator.display.value += '+'">
+                    
+                    <input type="button" class="button" value="4" onclick="calculator.display.value += '4'">
+                    <input type="button" class="button" value="5" onclick="calculator.display.value += '5'">
+                    <input type="button" class="button" value="6" onclick="calculator.display.value += '6'">
+                    <input type="button" class="button" value="-" onclick="calculator.display.value += '-'">
+                    
+                    <input type="button" class="button" value="1" onclick="calculator.display.value += '1'">
+                    <input type="button" class="button" value="2" onclick="calculator.display.value += '2'">
+                    <input type="button" class="button" value="3" onclick="calculator.display.value += '3'">
+                    <input type="button" class="button" value="*" onclick="calculator.display.value += '*'">
+                    
+                    <input type="button" class="button" value="0" onclick="calculator.display.value += '0'">
+                    <input type="button" class="button" value="." onclick="calculator.display.value += '.'">
+                    <input type="button" class="button equal" value="=" onclick="calculator.display.value = eval(calculator.display.value.replace('%','/100'))">
+                    <input type="button" class="button" value="/" onclick="calculator.display.value += '/'">
+                    
+   <input type="button" class="button clear" value="C" onclick="calculator.display.value = ''">
+                    <input type="button" class="button" value="%" onclick="calculator.display.value += '%'">
+                    <input type="button" class="button" value="←" onclick="calculator.display.value = calculator.display.value.slice(0, -1)">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
