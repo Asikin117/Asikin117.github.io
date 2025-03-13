@@ -12,9 +12,33 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
-    <title>LOVE FASHION</title>
+    <title>Kamen rider</title>
 
 <style>
+.glow-text {
+  color: white; 
+  font-weight: bold; 
+  font-size: 20px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.glow-text:hover {
+  text-shadow: 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+}
+.brand-logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(45deg, red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.brand-logo:hover {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
   header {
    background: url(git.jpg); 
    background-position: center;
@@ -31,6 +55,14 @@
   .tabs .tab a:hover, .tabs .tab a:focus.active {
   	background-color: transparent;
   }
+ .sidenav {
+  background: url('2.jpeg') no-repeat center center;
+  background-size: cover; /* Menyesuaikan gambar agar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-attachment: fixed; /* Agar gambar tetap di tempat saat scroll */
+  width: 300px; /* Atur lebar menu samping */
+  height: 100vh; /* Agar tinggi menu sesuai layar */
+}
   @media screen and (max-width:650px){
     header{
       min-height:500px ;
@@ -42,17 +74,17 @@
 <header>
   <nav class="nav-wrapper transparent">
 <div class="container">
-  <a href="#" class="brand-logo">o_O love</a>
+  <a href="#" class="brand-logo">𝓦𝓸𝓻𝓵𝓭 𝓚𝓪𝓶𝓮𝓷 𝓻𝓲𝓭𝓮𝓻</a>
   <a href="#" class="sidenav-trigger" data-target="mobile"><i class="material-icons">menu</i></a>
   <ul class="right hide-on-med-and-down">
-    <li><a href="#">HOME</a></li>
-     <li><a href="#">COLLECTION</a></li>
-     <li><a href="#">SHOP</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li><a href="home.html">QUIZ</a></li>
+  <li><a href="#" class="glow-text">HOME</a></li>
+ <li><a href="#" class="glow-text">COLLECTION</a></li>
+ <li><a href="#" class="glow-text">SHOP</a></li>
+<li><a href="#" class="glow-text">CONTACT</a></li>
+ <li><a href="home.html" class="glow-text">QUIZ</a></li>
   </ul>
   <ul class="sidenav grey darken-4 center" id="mobile">
-    <h3 class="white-text center">o_O love</h3>
+    <h3 class="white-text center">Kaksnnsnsr</h3>
     <li><a href="#" class="waves-effect waves-light white-text">HOME</a></li>
      <li><a href="#" class="waves-effect waves-light white-text">COLLECTION</a></li>
      <li><a href="#" class="waves-effect waves-light white-text">SHOP</a></li>
@@ -65,7 +97,7 @@
 <section class="container section">
   <div class="row">
     <div class="col s12 l6">
-      <img src="buid.jpg" class="responsive-img materialboxed">
+      <img src="z.jpeg" class="responsive-img materialboxed">
     </div>
     <div class="col s12 l6">
       <h2 class="black-text">kamen rider build</h2>
@@ -74,7 +106,7 @@
   </div>
     <div class="row">
     <div class="col s12 l6 push-l6">
-      <img src="zio.jpg" class="responsive-img materialboxed">
+      <img src="zi.jpeg" class="responsive-img materialboxed">
     </div>
     <div class="col s12 l6 pull-l6">
       <h2 class="black-text">Geats</h2>
@@ -93,7 +125,7 @@
 </section>
 <div class="parallax-container">
   <div class="parallax">
-   <img src="id.jpg" class="responsive-img">
+   <img src="ex.jpg" class="responsive-img">
   </div>
 </div>
 <section class="container section">
